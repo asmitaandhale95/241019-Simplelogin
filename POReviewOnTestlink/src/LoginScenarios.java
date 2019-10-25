@@ -19,7 +19,7 @@ import testlink.api.java.client.TestLinkAPIResults;
 public  class LoginScenarios 
 {
 public static WebDriver driver;
-public static String APIKey = "fe10a8bcee1c212d1b072dc094bb9942";
+public static String APIKey = "be10a8bcee1c212d1b072dc094bb9942";
 public static String serverUrl = "http://127.0.0.1:8666/testlink-1.9.19/lib/api/xmlrpc/v1/xmlrpc.php";
 public static  String testlinkprojectName = "POReview";
 public static  String testPlanName = "NewPOReviewPlan";
@@ -61,6 +61,7 @@ public static  String buildName = "POBuild1";
 		
 		//Click on login button
 		driver.findElement(By.id("login.login_btn_label")).click();
+		System.out.println("Login in aras is successfuk");
 		driver.manage().window().maximize();
 		 result = TestLinkAPIResults.TEST_PASSED;
 		//Enter your test case ID here
